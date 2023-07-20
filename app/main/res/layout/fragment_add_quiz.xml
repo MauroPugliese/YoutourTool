@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/minigame_quest_1">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/domanda1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textImeMultiLine"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioDomanda1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20">
+                    <RadioButton
+                        android:id="@+id/domanda1V"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/minigame_true"/>
+                    <RadioButton
+                        android:id="@+id/domanda1F"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/minigame_false"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/domanda1_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_baseline_warning_24"
+                    android:text="@string/warning_missing"
+                    android:textColor="@color/error"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/minigame_quest_2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/domanda2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textImeMultiLine"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioDomanda2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20">
+                    <RadioButton
+                        android:id="@+id/domanda2V"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/minigame_true"/>
+                    <RadioButton
+                        android:id="@+id/domanda2F"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/minigame_false"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/domanda2_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_baseline_warning_24"
+                    android:text="@string/warning_missing"
+                    android:textColor="@color/error"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/minigame_quest_3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/domanda3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textImeMultiLine"
+                        android:textColor="@color/black" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioDomanda3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20">
+                    <RadioButton
+                        android:id="@+id/domanda3V"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/minigame_true"/>
+                    <RadioButton
+                        android:id="@+id/domanda3F"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/minigame_false"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/domanda3_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_baseline_warning_24"
+                    android:text="@string/warning_missing"
+                    android:textColor="@color/error"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

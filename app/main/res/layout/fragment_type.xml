@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/typelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.RegistrationActivity">
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/register_as"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/tourist"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/touristcolor"
+            android:drawableEnd="@drawable/ic_baseline_check_circle_outline_24"
+            android:text="@string/tourist"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+
+        <TextView
+            android:id="@+id/touristtext"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/touristcolor"
+            android:gravity="center"
+            android:text="@string/tourist_description"
+            android:textColor="@color/notinfocus" />
+
+        <Button
+            android:id="@+id/curator"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/curator"
+            android:textColor="#000"
+            style="?attr/materialButtonOutlinedStyle"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/curatortext"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/curatorcolor"
+            android:gravity="center"
+            android:text="@string/curator_description"
+            android:textColor="@color/notinfocus"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

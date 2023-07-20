@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/wiz_room_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/dp40"
+        android:clickable="false"
+        android:visibility="gone"
+        android:layout_marginHorizontal="@dimen/dp20">
+
+        <TextView
+            android:id="@+id/wiz_room_place_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wiz_placeholder"
+            android:textAlignment="center"
+            android:padding="@dimen/dp10"
+            android:textSize="@dimen/card_room_title_size"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
+        <TextView
+            android:id="@+id/wiz_room_place_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/wiz_room_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/dp20"
+        android:layout_marginHorizontal="@dimen/dp20">
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="left"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/wiz_place_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wiz_placeholder"
+                    android:textSize="@dimen/card_title_size"
+                    android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                <TextView
+                    android:id="@+id/wiz_place_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wiz_minigame"
+                    android:textSize="@dimen/card_warning_size"
+                    android:textAppearance="?attr/textAppearanceSubtitle1" />
+
+            </LinearLayout>
+
+            <RadioButton
+                android:id="@+id/wiz_place_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:clickable="false"
+                android:textColor="@color/white"
+                android:buttonTint="@color/touristcolor"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

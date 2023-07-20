@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/alertBoxToursFrag"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="@color/redAlert"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/dp20"
+                android:layout_margin="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                app:cardElevation="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/notification"
+                        android:textColor="@color/redAlertText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connection_alert_box_title"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <TextView
+                        android:id="@+id/notification_desc"
+                        android:textColor="@color/redAlertText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connection_alert_box_description"
+                        android:textAppearance="?attr/textAppearanceBody2" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="7dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/dp20"
+                android:layout_margin="@dimen/dp20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tour_tab_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tab_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_tab_all"/>
+
+                        <com.google.android.material.tabs.TabItem
+                            android:id="@+id/tab_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tour_tab_only_me"/>
+
+                    </com.google.android.material.tabs.TabLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/search_tours_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dp20"
+                        android:layout_marginVertical="@dimen/dp10"
+                        android:hint="@string/tour_search_hint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/search_tours"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/dp05"
+                            android:inputType="textImeMultiLine"
+                            android:textColor="@color/buttonColor"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gridBackgroundColor"
+                        android:paddingVertical="@dimen/dp20"
+                        app:cardCornerRadius="@dimen/dp20"
+                        app:cardElevation="@dimen/dp10"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </androidx.core.widget.NestedScrollView>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addPointOfInterestPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="bottom|end"
+            android:clickable="true"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/plus_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
+
+
+

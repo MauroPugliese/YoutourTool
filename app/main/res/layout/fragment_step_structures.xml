@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.wizard.StepStructuresFragment">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="7dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="@dimen/dp20"
+        android:layout_margin="@dimen/dp20">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp20"
+            android:hint="@string/wiz_search_structure">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_structures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dp05"
+                android:inputType="textImeMultiLine"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gridBackgroundColor"
+            android:paddingVertical="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp80"
+            app:cardCornerRadius="@dimen/dp20"
+            app:cardElevation="@dimen/dp10"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wiz_structure_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

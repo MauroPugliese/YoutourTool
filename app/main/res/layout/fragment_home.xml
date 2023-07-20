@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layer1home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            tools:context=".ui.home.HomeFragment">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/alertBoxHomeFrag"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="@color/redAlert"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/dp20"
+                android:layout_margin="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                app:cardElevation="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/notification"
+                        android:textColor="@color/redAlertText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connection_alert_box_title"
+                        android:textAppearance="?attr/textAppearanceHeadline6" />
+
+                    <TextView
+                        android:id="@+id/notification_desc"
+                        android:textColor="@color/redAlertText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connection_alert_box_description"
+                        android:textAppearance="?attr/textAppearanceBody2" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/welcome_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Benvenuto" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="7dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/dp20"
+                android:layout_margin="@dimen/dp20"
+                >
+                <LinearLayout
+                    android:id="@+id/recyclerStrutture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+                    <TextView
+                        android:id="@+id/tvStrucutres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp05"
+                        android:layout_marginLeft="@dimen/dp05"
+                        android:textColor="@color/black"
+                        android:text="@string/home_your_strucutres" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp10">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewStructure"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:layout_gravity="start"
+                            android:scrollbars="horizontal"
+                            android:scrollbarTrackHorizontal="@drawable/scrollbar_track"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:paddingTop="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="7dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/dp20"
+                android:layout_margin="@dimen/dp20"
+                >
+                <LinearLayout
+                    android:id="@+id/recyclerPercorsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+                    <TextView
+                        android:id="@+id/tvTours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp05"
+                        android:layout_marginLeft="@dimen/dp05"
+                        android:textColor="@color/black"
+                        android:text="@string/home_your_tours" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp10">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewTour"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:layout_gravity="start"
+                            android:scrollbars="horizontal"
+                            android:scrollbarTrackHorizontal="@drawable/scrollbar_track"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:paddingTop="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="7dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/dp20"
+                android:layout_margin="@dimen/dp20"
+                >
+                <LinearLayout
+                    android:id="@+id/recyclerTappe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+                    <TextView
+                        android:id="@+id/tvRooms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp05"
+                        android:layout_marginLeft="@dimen/dp05"
+                        android:textColor="@color/black"
+                        android:text="@string/home_your_rooms" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp10">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewRoom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:layout_gravity="start"
+                            android:scrollbars="horizontal"
+                            android:scrollbarTrackHorizontal="@drawable/scrollbar_track"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dp30"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:paddingTop="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="7dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardCornerRadius="@dimen/dp20"
+                android:layout_margin="@dimen/dp20"
+                >
+                <LinearLayout
+                    android:id="@+id/recyclerPuntidinteresse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+                    <TextView
+                        android:id="@+id/tvPlaces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp05"
+                        android:layout_marginLeft="@dimen/dp05"
+                        android:textColor="@color/black"
+                        android:text="@string/home_your_poi" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp10">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerViewPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="10"
+                            android:layout_gravity="start"
+                            android:scrollbars="horizontal"
+                            android:scrollbarTrackHorizontal="@drawable/scrollbar_track"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/homeFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="5dp"
+            app:fab_addButtonColorNormal="@color/colorPrimary"
+            app:fab_addButtonColorPressed="@color/purple_700"
+            app:fab_labelStyle="@style/customFab"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_rooms_white_24dp"
+                app:fab_colorNormal="@color/colorPrimary"
+                app:fab_colorPressed="@color/colorPrimary"
+                app:fab_size="mini"
+                app:fab_title="@string/add_room" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addPointOfInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_places_white_24"
+                app:fab_colorNormal="@color/colorPrimary"
+                app:fab_colorPressed="@color/colorPrimary"
+                app:fab_size="mini"
+                app:fab_title="@string/add_place" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addTour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_tour_white_24"
+                app:fab_colorNormal="@color/colorPrimary"
+                app:fab_colorPressed="@color/colorPrimary"
+                app:fab_size="mini"
+                app:fab_title="@string/add_tours" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addStructure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_icon="@drawable/ic_outline_apartment_24"
+                app:fab_colorNormal="@color/colorPrimary"
+                app:fab_colorPressed="@color/colorPrimary"
+                app:fab_size="mini"
+                app:fab_title="@string/add_structure" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+
+

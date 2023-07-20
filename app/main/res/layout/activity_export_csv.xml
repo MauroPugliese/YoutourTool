@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.tours.ToursFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="7dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardCornerRadius="@dimen/dp20"
+        android:layout_margin="@dimen/dp20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/export_tab_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_export"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_export_title"/>
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/tab_import"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tab_import_title"/>
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_panel_export"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/search_tours_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp20"
+                    android:layout_marginVertical="@dimen/dp10"
+                    android:hint="@string/export_search">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/search_tours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/dp05"
+                        android:layout_marginVertical="@dimen/dp10"
+                        android:inputType="textImeMultiLine"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/gridBackgroundColor"
+                    android:paddingTop="@dimen/dp10"
+                    app:cardCornerRadius="@dimen/dp20"
+                    app:cardElevation="@dimen/dp10"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dp30"/>
+
+                        <Button
+                            android:id="@+id/export_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp30"
+                            android:text="@string/export_btn" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gridBackgroundColor"
+                android:paddingTop="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp20"
+                app:cardElevation="@dimen/dp10"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <LinearLayout
+                    android:id="@+id/tab_panel_import"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/import_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="@dimen/dp30"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:layout_marginRight="@dimen/dp20"
+                            app:cardBackgroundColor="@android:color/white"
+                            android:layout_margin="@dimen/dp20"
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="@dimen/dp10">
+                                <TextView
+                                    android:id="@+id/successAlert"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dp05"
+                                    android:padding="@dimen/dp05"
+                                    android:background="@color/successAlertBG"
+                                    android:textColor="@color/successAlert"
+                                    android:visibility="gone"
+                                    android:text="@string/import_success" />
+                                <TextView
+                                    android:id="@+id/errorAlert"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/dp05"
+                                    android:padding="@dimen/dp05"
+                                    android:background="@color/errorAlertBg"
+                                    android:textColor="@color/errorAlert"
+                                    android:visibility="gone"
+                                    android:text="@string/import_error" />
+                                <Button
+                                    android:id="@+id/import_btn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="@color/curatorcolor"
+                                    android:text="@string/import_btn" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

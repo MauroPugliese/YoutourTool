@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.stepstone.stepper.StepperLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stepperLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:ms_stepperType="progress_bar"
+    app:ms_backButtonColor="@color/buttonColor"
+    app:ms_nextButtonColor="@color/buttonColor"
+    app:ms_completeButtonColor="@color/completeButtonColor"
+    app:ms_activeStepColor="@color/touristcolor"
+    app:ms_bottomNavigationBackground="@color/black"
+    app:ms_backButtonText="@string/back_btn"
+    app:ms_nextButtonText="@string/next_btn"
+    app:ms_completeButtonText="@string/complete_btn"
+    />

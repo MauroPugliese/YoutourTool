@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_marginBottom="20dp"
+    android:clickable="true"
+    app:cardCornerRadius="@dimen/dp20"
+    android:layout_marginHorizontal="@dimen/dp20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="90dp"
+        android:padding="@dimen/dp05">
+
+        <ImageView
+            android:id="@+id/tour_card_image"
+            android:layout_width="@dimen/dp50"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/dp10"
+            android:layout_gravity="left"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/tour_card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title placeholder"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                />
+            <TextView
+                android:id="@+id/tour_card_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address placeholder"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/goto_tour_list_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="7"
+            android:paddingRight="16dp"
+            app:srcCompat="@drawable/ic_chevron_right_black_24" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
