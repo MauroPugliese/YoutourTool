@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_desc">Welcome to YouTour Creation Tool!</string>
+    <string name="welcome_home">Welcome,</string>
+    <string name="create">Create Account</string>
+    <string name="login">Login</string>
+    <string name="or_text">Or</string>
+    <string name="register_as">" Do you want to register as:"</string>
+    <string name="register_as_curator">As Curator</string>
+    <string name="register_as_tourist">As Tourist</string>
+    <string name="back">Go back</string>
+
+    <string name="title_activity_main">Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_places">Places</string>
+    <string name="title_tours">Tours</string>
+
+    <string name="curator_description">
+        Let your Guests make the most out of their visit!\n\n
+-  Register your Structures in YouTour\n\n
+-  Upload the Points of Interest present in your Structures,\nwith information about them\n\n
+-  Create specific tours for your Guests
+    </string>
+
+    <string name="tourist_description"> Want to make the most out of your visit?\n\n
+-  Create tours to guide your visit in the Museum!\n\n
+-  Learn about the various Points Of Interest \n inside Museums from all around the world!\n\n
+-  Share your tour with your friends!
+    </string>
+
+
+    <!-- Relativi a Places   -->
+    <string name="place_item_title">Title place</string>
+    <string name="place_item_description">Secondary text place</string>
+    <string name="place_fragment_title">Places List</string>
+    <string name="place_image_description">Cover image</string>
+    <string name="place_description">Place description</string>
+    <string name="place_search_hint">Search by Title or Author</string>
+
+    <!-- Relativi a Places Toolbar Detail   -->
+    <string name="edit">Edit item</string>
+    <string name="edit_description">Edit this record</string>
+    <string name="delete">Delete item</string>
+    <string name="delete_description">Delete this record</string>
+
+    <!-- Relativi a Rooms   -->
+    <string name="add_room">Add Room</string>
+    <string name="caution">Warning!</string>
+
+
+    <string name="ic_search_title">Search</string>
+    <string name="ic_filter_title">Filter</string>
+    <string name="logout">Logout</string>
+    <string name="empty_string">There are empty fields</string>
+    <string name="no_connection">No connection</string>
+    <string name="curator">Museum Curator</string>
+    <string name="tourist">Tourist</string>
+
+    <string name="next">Next</string>
+    <string name="delete_dialog_title">Are you sure?</string>
+    <string name="delete_dialog_msg">By clicking on "CONFIRM" you will delete the resource permanently. Attention, the operation is irreversible.</string>
+    <string name="delete_dialog_confirm">Confirm</string>
+    <string name="delete_dialog_cancel">Cancel</string>
+
+
+    <!-- Relativi a Tours   -->
+    <string name="tour_item_title">Title tour</string>
+    <string name="tour_item_description">Secondary text tour</string>
+    <string name="register">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email">Email Address</string>
+    <string name="surname">Surname</string>
+    <string name="name">Name</string>
+    <string name="alredy_registered">Do you already have an account? Log in</string>
+    <string name="divider">Divider</string>
+    <string name="register_title">Registration</string>
+    <string name="name_structure">Structure name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="province">Province</string>
+    <string name="schedule">Visit Slot</string>
+    <string name="add_structure">Add structure</string>
+    <string name="qr_code_scanner">Scanner QR Code</string>
+    <string name="sure">Warning!</string>
+    <string name="exit_dialog">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="forgotRequest">Send recovery mail</string>
+    <string name="tour_grafo">Tour</string>
+    <string name="list_places">Places that can be visited on this tour:</string>
+    <string name="list_places_all">Places that can be visited on this room:</string>
+    <string name="select_room">Select room</string>
+    <string name="title_room">Title room</string>
+    <string name="tour_tab_all">All tours</string>
+    <string name="tour_tab_only_me">My tours</string>
+    <string name="tour_search_hint">Search by Title or Structure</string>
+
+
+
+    <string name="name_place">Name place</string>
+    <string name="author">Author</string>
+    <string name="example_minute">Example: 30</string>
+    <string name="description">Description</string>
+    <string name="choose_image">Choose image</string>
+    <string name="add_place">Add place</string>
+    <string name="settings">Settings</string>
+    <string name="select_image">Select image</string>
+    <string name="add">Add</string>
+    <string name="title_structure">Title Structure</string>
+    <string name="list_room">Rooms present in this structure</string>
+    <string name="select_structure">Select Structure</string>
+    <string name="graph_walking_room">To continue the tour you have to go through here!</string>
+
+
+
+    <!-- Relativi a Wizard  -->
+    <string name="wiz_tab_title">Create new tour</string>
+    <string name="back_btn">Back</string>
+    <string name="next_btn">Next</string>
+    <string name="complete_btn">Confirm</string>
+    <string name="exit_btn">Exit</string>
+    <string name="wiz_structures_title">Select Structure</string>
+    <string name="wiz_rooms_title">Select Rooms</string>
+    <string name="wiz_places_title">Seleziona Places</string>
+    <string name="wiz_info_title">General Information</string>
+    <string name="wiz_summary_title">Summary and Confirm</string>
+    <string name="wiz_alert_title">Are you sure?</string>
+    <string name="wiz_alert_msg">By clicking on "LEAVE WIZARD" all the information about the tour creation will be lost.</string>
+    <string name="wiz_alert_accept">Leave wizard</string>
+    <string name="wiz_alert_decline">Continue creation</string>
+    <string name="wiz_search_structure">Search by Name, Address, City or Region</string>
+    <string name="wiz_no_data_title">Warning!</string>
+    <string name="wiz_no_data_msg">No data found matching the selection.</string>
+    <string name="wiz_no_place_msg">There are no points of interest associated with the room. Provide to upload them or the room will be considered only as a passageway.</string>
+    <string name="wiz_no_selection">At least one element must be selected to go ahead.</string>
+    <string name="wiz_room_repeated_msg">You cannot enter the same room consecutively in the tour.</string>
+    <string name="wiz_no_input">Please, enter all the required (*) fields.</string>
+    <string name="wiz_no_selection_close">Ok, I understand</string>
+    <string name="wiz_input_title">Enter Title (required)</string>
+    <string name="wiz_input_subtitle">Enter Subtitle (optional)</string>
+    <string name="wiz_input_description">Enter Description (required)</string>
+    <string name="wiz_select_rooms">Add rooms</string>
+    <string name="wiz_selected_rooms">Added rooms:</string>
+    <string name="wiz_select_places">Select any places to visit in the room. Do not select anything if it is a passage point.</string>
+    <string name="wiz_places_placeholder">Rooms title</string>
+    <string name="wiz_time_placeholder">Approx time:</string>
+    <string name="wiz_placeholder">Title placeholder</string>
+    <string name="wiz_minigame">Minigame:</string>
+
+
+
+
+
+    <string name="open">Open</string>
+    <string name="scannerqr_permission_title">Required Permission: Camera</string>
+    <string name="scannerqr_permission_description">In order to use the point of interest recognition feature, camera access permission is required.</string>
+    <string name="scannerqr_dontaskpermission_description">The \"Don\'t ask again\" option was previously selected. To enable this feature go to:&#xA; Settings, app and notifications, select \"YouTour Creation Tool\", authorizations, and enable camera permission.</string>
+    <string name="scannerqr_prompt_message">Scan the QR code</string>
+    <string name="qr_code">QR Code</string>
+    <string name="qr_code_notvalid">The scanned QR code is not valid.</string>
+    <string name="empty_mail">" Please enter your email address"</string>
+    <string name="empty_password">" Please enter your password"</string>
+    <string name="wrong_credentials">Wrong email address or password</string>
+    <string name="email_sent">Email Sent</string>
+    <string name="email_sent_info">" If an account is associated with the email, you will receive an email to reset your password"</string>
+    <string name="missing_fields">" You have to fill in the following fields:"</string>
+    <string name="password_short">The password must be at least 6 characters long</string>
+    <string name="account_exist">An account already exists associated with the email address provided</string>
+    <string name="error_mail">" Check that you have entered the email correctly"</string>
+    <string name="no_rooms">There are no rooms available for the selected structure</string>
+    <string name="no_structures">You haven\'t created a structure yet</string>
+    <string name="visit_time">" Visiting time"</string>
+    <string name="minutes">Minutes</string>
+    <string name="wrong_time">" The visit time entered is incorrect"</string>
+    <string name="period">Period</string>
+    <string name="warning_missing">" Required field!"</string>
+    <string name="need_room">" Are you sure you want to quit? It is necessary to create at least one room after creating your structure"</string>
+
+
+
+    <!-- Relativi a Import/Export to CSV -->
+    <string name="export_title">Import/Export</string>
+    <string name="tab_export_title">Export CSV</string>
+    <string name="tab_import_title">Import CSV</string>
+    <string name="export_search">Search Tour</string>
+    <string name="export_btn">Export</string>
+    <string name="export_permission">Permission allows us to save files. Please allow this permission in App Settings.</string>
+    <string name="save">Save</string>
+    <string name="import_btn">Import data</string>
+    <string name="import_success">Import successfully completed!</string>
+    <string name="import_error">Warning! An error has occured during the import, please check file format and try again.</string>
+    <string name="import_warning">By importing a csv file all the data stored in the system will be overwritten.</string>
+    <string name="import_dismiss_btn">Cancel and return</string>
+    <string name="import_continue_btn">It\'s ok, go ahead</string>
+
+
+
+
+    <!-- Relativi a Settings-->
+
+    <string name="Profile" >User Name</string>
+    <string name="notification" >Notifications</string>
+    <string name="notification_desc" >Notification toned</string>
+    <string name="security" >Security</string>
+    <string name="security_desc" >Privacy, two-step verification, delete my account</string>
+    <string name="help" >Help</string>
+    <string name="help_desc" >Contact us, privacy policy</string>
+    <string name="friends" >Invite a friend</string>
+    <string name="friend_desc" />
+    <string name="version" >Version</string>
+    <string name="connection_alert_box_title">Missing internet connection</string>
+    <string name="connection_alert_box_description">Changes made during this session will be saved as soon as the connection will be restored.</string>
+    <string name="only_numbers">Visiting hours must be a integer number</string>
+    <string name="advanced_settings_title">Advanced settings</string>
+    <string name="advancedsettings_scanner_sound_desc">Enable or disable QR scanner sound when a QR code is poperly read</string>
+    <string name="advancedsettings_scanner_sound_title">Scanner QR sound</string>
+    <string name="export_permission_title">Requested permission: Write on external storage</string>
+    <string name="export_permission_description">In order to use the export feature, write on external storage permission is required.</string>
+    <string name="export_dontaskpermission_description">The \"Don\'t ask again\" option was previously selected. To enable this feature go to:&#xA; Settings, app and notifications, select \"YouTour Creation Tool\", authorizations, and enable storage permission.</string>
+    <string name="home_your_strucutres">Your Structures:</string>
+    <string name="home_your_tours">Your Tours:</string>
+    <string name="home_your_rooms">Your Rooms:</string>
+    <string name="home_your_poi">Your Places:</string>
+    <string name="add_tours">Add tours</string>
+    <string name="minigame_none">None</string>
+    <string name="minigame_select_a_minigame">Choose a minigame</string>
+    <string name="minigame_quest_1">Question 1</string>
+    <string name="minigame_quest_2">Question 2</string>
+    <string name="minigame_quest_3">Question 3</string>
+    <string name="minigame_true">True</string>
+    <string name="minigame_false">False</string>
+    <string name="minigame_puzzle_note">Reminder: The puzzle will be automatically generated from the image that you selected with the button below.</string>
+    <string name="quiz_questEansw_selected">This place\'s quiz answers and questions:</string>
+    <string name="quiz_noQuiz_forthisplace">No quiz for this palce.</string>
+    <string name="quiz_quest_selected">This place\'s quiz  and questions:</string>
+    <string name="place_has_puzzle">Puzzle available for this place.</string>
+    <string name="place_hasNOT_puzzle">Puzzle not available for this place.</string>
+    <string name="place_not_yours_decription">The scanned place\'s QR code does not belong to any of your structures.</string>
+    <string name="place_not_yours_title">Place not valid</string>
+    <string name="toast_add">Successful creation!</string>
+    <string name="toast_edit">Successful changes!</string>
+    <string name="toast_delete">Succsesful elimination!</string>
+    <string name="edit_place">Edit place</string>
+    <string name="edit_room">Edit room</string>
+    <string name="edit_structure">Edit structure</string>
+    <string name="home_tourist_poi">Places:</string>
+    <string name="home_tourist_rooms">Rooms:</string>
+    <string name="home_tourist_strucures">Structures:</string>
+
+
+</resources>

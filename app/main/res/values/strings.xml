@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name" translatable="false">YouTour Creation Tool</string>
+    <string name="welcome_desc">Benvenuto su YouTour Creation Tool!</string>
+    <string name="welcome_home">Benvenuto,</string>
+    <string name="create">Crea Account</string>
+    <string name="login">Accedi</string>
+    <string name="or_text">Oppure</string>
+    <string name="facebook_app_id" translatable="false">612071606802811</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb612071606802811</string>
+    <string name="register_as">Vuoi registrarti come:</string>
+    <string name="register_as_curator">Come Curatore Museale</string>
+    <string name="register_as_tourist">Come Turista</string>
+    <string name="back">Torna Indietro</string>
+
+    <string name="title_activity_main">Bacheca</string>
+    <string name="title_home">Home</string>
+    <string name="title_places">Luoghi</string>
+    <string name="title_tours">Itinerari</string>
+
+
+    <string name="tourist_description">  Vuoi sfruttare appieno la tua visita?\n\n
+-  Crea tour per guidare la tua visita nel Museo!\n\n
+-  Scopri i vari Punti di Interessi \n presenti nei Musei di tutto il mondo!\n\n
+-  Condividi i tuoi tour con gli amici!
+    </string>
+
+
+    <string name="curator_description"> Fà che i tuoi Ospiti sfruttino appieno la loro visita!\n\n
+-  Registra le tue Strutture in Youtour\n\n
+-  Carica i Punti di Interesse presenti nelle tue strutture,\n con le informazioni relative\n\n
+-  Crea specifici tour per i tuoi Ospiti
+    </string>
+
+
+    <!-- Relativi a Places   -->
+    <string name="place_item_title">Titolo luogo</string>
+    <string name="place_item_description">Testo secondario luogo</string>
+    <string name="place_fragment_title">Elenco Luoghi</string>
+    <string name="place_image_description">Immagine di copertina</string>
+    <string name="place_description">Descrizione del luogo</string>
+    <string name="place_search_hint">Cerca per Titolo o Autore</string>
+
+
+    <!-- Relativi a Places Toolbar Detail   -->
+    <string name="edit">Modifica elemento</string>
+    <string name="edit_description">Modifica questo elemento</string>
+    <string name="delete">Elimina elemento</string>
+    <string name="delete_description">Elimina questo elemento</string>
+
+    <string name="ic_search_title">Cerca</string>
+    <string name="ic_filter_title">Filtra</string>
+    <string name="logout">Disconnetti</string>
+    <string name="empty_string">Si prega di riempire tutti i campi</string>
+    <string name="no_connection">Connessione assente</string>
+    <string name="curator">Curatore Museale</string>
+    <string name="tourist">Turista</string>
+    <string name="next">Avanti</string>
+    <string name="caution">Attenzione!</string>
+
+    <string name="delete_dialog_title">Sei sicuro?</string>
+    <string name="delete_dialog_msg">Cliccando su "PROCEDI" eliminerai la risorsa in modo permanente. Attenzione, l\'operazione è irreversibile.</string>
+    <string name="delete_dialog_confirm">Ho capito, procedi</string>
+    <string name="delete_dialog_cancel">Annulla operazione</string>
+
+    <!-- Relativi a Tours   -->
+    <string name="tour_item_title">Titolo tour</string>
+    <string name="tour_item_description">Testo secondario tour</string>
+    <string name="created_by" translatable="false">By Gang Of Five</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="register">Registrati</string>
+    <string name="forgot_password">Password Dimenticata?</string>
+    <string name="email">Indirizzo Email</string>
+    <string name="surname">Cognome</string>
+    <string name="name">Nome</string>
+    <string name="alredy_registered">Hai già un account? Accedi</string>
+    <string name="divider">Divisore</string>
+    <string name="register_title">Registrazione</string>
+    <string name="name_structure">Nome struttura</string>
+    <string name="address">Indirizzo</string>
+    <string name="city">Città</string>
+    <string name="region">Regione</string>
+    <string name="province">Provincia</string>
+    <string name="schedule">Orari di visite</string>
+    <string name="add_structure">Aggiungi struttura</string>
+    <string name="tour_grafo">Percorso</string>
+    <string name="list_places">Luoghi visitabili in questo Percorso:</string>
+    <string name="list_places_all">Luoghi visitabili in questa Stanza:</string>
+    <string name="pref_file" translatable="false">conf.ini</string>
+    <string name="qr_code_scanner">Scansiona QR Code</string>
+    <string name="sure">Attenzione!</string>
+    <string name="exit_dialog">Sei sicuro di voler uscire?</string>
+    <string name="yes">Si</string>
+    <string name="no" translatable="false">No</string>
+    <string name="forgotRequest">Invia mail di recupero</string>
+    <string name="select_room">Seleziona stanza</string>
+    <string name="title_room">Titolo Tappa</string>
+    <string name="tour_tab_all">Mostra tutti</string>
+    <string name="tour_tab_only_me">I miei itinerari</string>
+    <string name="tour_search_hint">Cerca per Titolo o Struttura</string>
+
+
+    <string name="name_place">Nome punto d\'interesse</string>
+    <string name="author">Autore</string>
+    <string name="example_minute">Esempio: 30</string>
+    <string name="description">Descrizione</string>
+    <string name="choose_image">Scegli immagine</string>
+    <string name="add_place">Aggiungi punto d\'interesse</string>
+    <string name="settings">Impostazioni</string>
+    <string name="select_image">Seleziona immagine</string>
+    <string name="add">Aggiungi</string>
+    <string name="title_structure">Titolo Struttura</string>
+    <string name="list_room">Stanze presenti in questa Struttura</string>
+    <string name="select_structure">Seleziona Struttura</string>
+    <string name="graph_walking_room">Per proseguire nell`itinerario devi passare da qui!</string>
+
+    <!-- Relativi a Wizard  -->
+    <string name="wiz_tab_title">Crea nuovo itinerario</string>
+    <string name="back_btn">Indietro</string>
+    <string name="next_btn">Avanti</string>
+    <string name="complete_btn">Conferma</string>
+    <string name="exit_btn">Esci</string>
+    <string name="wiz_structures_title">Seleziona Struttura</string>
+    <string name="wiz_rooms_title">Seleziona Stanze</string>
+    <string name="wiz_places_title">Seleziona Punti di Interesse</string>
+    <string name="wiz_info_title">Informazioni Generali</string>
+    <string name="wiz_summary_title">Riepilogo e Conferma</string>
+    <string name="wiz_alert_title">Sei sicuro?</string>
+    <string name="wiz_alert_msg">Cliccando su "ABBANDONA IL WIZARD" tutte le informazioni relative alla creazione del percorso verranno perse.</string>
+    <string name="wiz_alert_accept">Abbandona il wizard</string>
+    <string name="wiz_alert_decline">Continua la creazione</string>
+    <string name="wiz_search_structure">Cerca per Nome, Indirizzo, Città o Regione</string>
+    <string name="wiz_no_data_title">Attenzione!</string>
+    <string name="wiz_no_data_msg">Non ci sono dati corrispondenti alla selezione.</string>
+    <string name="wiz_no_place_msg">Non ci sono punti di interesse associati alla stanza. Provvedi a caricarne nel sistema oppure la stanza sarà considerata soltanto come luogo di passaggio.</string>
+    <string name="wiz_no_selection">Devi selezionare almeno un elemento per proseguire.</string>
+    <string name="wiz_room_repeated_msg">Non puoi inserire la stessa stanza consecutivamente nel percorso.</string>
+    <string name="wiz_no_input">Compila i campi richiesti (*) per proseguire.</string>
+    <string name="wiz_no_selection_close">Ho capito</string>
+    <string name="wiz_input_title">Inserisci Titolo* (richiesto)</string>
+    <string name="wiz_input_subtitle">Inserisci Sottotitolo (optionale)</string>
+    <string name="add_room">Aggiungi stanza</string>
+    <string name="wiz_input_description">Inserisci Descrizione* (richiesto)</string>
+    <string name="wiz_select_rooms">Aggiungi stanze al percorso</string>
+    <string name="wiz_selected_rooms">Stanze aggiunte:</string>
+    <string name="wiz_select_places">Seleziona eventuali punti di interesse da visitare nella stanza. Non selezionare nulla se si tratta di una stanza di passaggio.</string>
+    <string name="wiz_places_placeholder">Titolo stanza</string>
+    <string name="wiz_time_placeholder">Durata stimata:</string>
+    <string name="wiz_placeholder">Titolo placeholder</string>
+    <string name="wiz_minigame">Minigioco:</string>
+
+    <string name="open">Aperto</string>
+    <string name="scannerqr_permission_title">Permesso richiesto: Fotocamera</string>
+    <string name="scannerqr_permission_description">Per utilizzare la funzionalità di riconoscimento dei punti d\'interesse attraverso i QR, occorre concedere il permesso per l\'accesso all fotocamera.</string>
+    <string name="scannerqr_dontaskpermission_description">In precedenza è stato selezionata l\'opzione di non ripetere la richiesta del permesso. Per abilitare questa funzionalità andare in:&#xA; Impostazioni, App e notifiche, Selezionare \"YouTour Creation Tool\", Autorizzazioni, e attivare il permesso per la fotocamera.</string>
+    <string name="scannerqr_prompt_message">Inquadra il codice QR</string>
+    <string name="qr_code">Codice QR</string>
+    <string name="qr_code_notvalid">Il codice QR scannerizzato non è valido.</string>
+
+
+    <string name="ok" translatable="false">Ok</string>
+    <string name="empty_mail">Si prega di inserire l\'indirizzo mail</string>
+    <string name="empty_password">Si prega di inserire la password</string>
+    <string name="wrong_credentials">Indirizzo email o password errati</string>
+    <string name="email_sent">Email Inviata</string>
+    <string name="email_sent_info">Se all\'email è associato un account, riceverai una mail per reimpostare la password</string>
+    <string name="missing_fields">Devi riempire i seguenti campi:</string>
+    <string name="password_short">La password deve essere di almeno 6 caratteri</string>
+    <string name="account_exist">Esiste già un account associato all\'indirizzo mail fornito</string>
+    <string name="error_mail">Controllare di aver inserito correttamente la mail</string>
+    <string name="no_rooms">Non sono presenti stanze disponibili per la struttura selezionata</string>
+    <string name="no_structures">Non hai ancora creato una struttura</string>
+    <string name="visit_time">Tempo di visita</string>
+    <string name="minutes">Minuti</string>
+    <string name="wrong_time">Il tempo di visita inserito è errato</string>
+    <string name="period">Periodo</string>
+    <string name="warning_missing">Campo obbligatorio!</string>
+    <string name="need_room">Sei sicuro di voler uscire? É necessario creare almeno una stanza dopo aver creato la propria struttura</string>
+
+
+    <!-- Relativi a Import/Export to CSV -->
+    <string name="export_title">Importa/Esporta</string>
+    <string name="tab_export_title">Esporta CSV</string>
+    <string name="tab_import_title">Importa CSV</string>
+    <string name="export_search">Cerca Itinerario</string>
+    <string name="export_btn">Esporta itinerari</string>
+    <string name="export_permission">I permessi ci consentono di salvare o condividere questo file. Abilitali nelle impostazioni del telefono per proseguire.</string>
+    <string name="save">Salva</string>
+    <string name="import_btn">Importa dati</string>
+    <string name="import_success">I dati sono stati importati con successo!</string>
+    <string name="import_error">Attenzione! Qualcosa è andato storto, verifica il formato del file e prova di nuovo.</string>
+    <string name="import_warning">Importando un file csv tutti i dati presenti nel sistema verrano sovrascritti.</string>
+    <string name="import_dismiss_btn">Annulla operazione</string>
+    <string name="import_continue_btn">Ho capito, voglio proseguire</string>
+
+
+    <!-- Relativi a Settings -->
+    <string name="Profile">Nome Utente</string>
+    <string name="notification">Notifiche</string>
+    <string name="notification_desc">Toni notifiche</string>
+    <string name="security">Sicurezza</string>
+    <string name="security_desc">Privacy, verifica in due passaggi, elimina account</string>
+    <string name="help">Aiuto</string>
+    <string name="help_desc">Contattaci, informativa sulla privacy</string>
+    <string name="friends">Invita un amico</string>
+    <string name="friend_desc" />
+    <string name="version">Versione</string>
+    <string name="connection_alert_box_title">Connessione assente</string>
+    <string name="connection_alert_box_description">Le modifiche apportate verranno salvate una volta che la connessione sarà risatabilita.</string>
+    <string name="only_numbers">L\'orario di visita deve essere un numero intero</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="advanced_settings_title">Impostazioni avanzate</string>
+    <string name="advancedsettings_scanner_sound_title">Suono lettura lettore QR</string>
+    <string name="advancedsettings_scanner_sound_desc">Abilita o disabilita il suono del lettore quando un codice QR è stato letto correttamente.</string>
+    <string name="export_permission_title">Richiesta permesso: Scrittura su memoria esterna</string>
+    <string name="export_permission_description">Per utilizzare la funzionalità di esportazione, occorre concedere il permesso per la scrittura su memoria esterna.</string>
+    <string name="export_dontaskpermission_description">In precedenza è stato selezionata l\'opzione di non ripetere la richiesta del permesso. Per abilitare questa funzionalità andare in:&#xA; Impostazioni, App e notifiche, Selezionare \"YouTour Creation Tool\", Autorizzazioni, e attivare il permesso per l\'archiviazione.</string>
+    <string name="home_your_strucutres">Le tue Strutture:</string>
+    <string name="home_your_tours">I tuoi Itinerari:</string>
+    <string name="home_your_rooms">Le tue Stanze</string>
+    <string name="home_your_poi">I tuoi Punti d\'Interesse:</string>
+    <string name="add_tours">Aggiungi itinerario</string>
+    <string name="minigame_none">Nessuno</string>
+    <string name="minigame_select_a_minigame">Seleziona un minigioco</string>
+    <string name="minigame_quest_1">Domanda 1</string>
+    <string name="minigame_quest_2">Domanda 2</string>
+    <string name="minigame_quest_3">Domanda 3</string>
+    <string name="minigame_true">Vero</string>
+    <string name="minigame_false">Falso</string>
+    <string name="minigame_puzzle_note">N.B. Il puzzle sarà realizzato automaticamente a partire dall\'immagine caricata mediante il tasto sottostante.</string>
+    <string name="quiz_questEansw_selected">Domande e risposte per il quiz di questo punto d\'interesse:</string>
+    <string name="quiz_noQuiz_forthisplace">Nessun quiz per questo punto d\'interesse.</string>
+    <string name="quiz_quest_selected">Domande relative al quiz di questo punto d\'interesse:</string>
+    <string name="place_has_puzzle">Puzzle disponibile per questo punto d\'interesse.</string>
+    <string name="place_hasNOT_puzzle">Puzzle non disponibile per questo punto d\'interesse.</string>
+    <string name="place_not_yours_decription">Il QR del punto d\'interesse scansionato non appartiene ad una delle tue strutture.</string>
+    <string name="place_not_yours_title">Punto d\'interesse non valido</string>
+    <string name="toast_add">Creazione avvenuta con successo!</string>
+    <string name="toast_edit">Modifica avvenuta con successo!</string>
+    <string name="toast_delete">Eliminazione avvenuta con successo</string>
+    <string name="edit_place">Modifica punto d\'interesse</string>
+    <string name="edit_room">Modifica stanza</string>
+    <string name="edit_structure">Modifica struttura</string>
+    <string name="home_tourist_poi">Punti d\'interesse:</string>
+    <string name="home_tourist_strucures">Strutture:</string>
+    <string name="home_tourist_rooms">Stanze:</string>
+
+</resources>
+    
+    
+    
+ 
+
