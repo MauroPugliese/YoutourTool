@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "997088539224",
+    "firebase_url": "https://e-culture-tool-b3e92-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "e-culture-tool-b3e92",
+    "storage_bucket": "e-culture-tool-b3e92.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997088539224:android:c7f71b87c5410b2b86902d",
+        "android_client_info": {
+          "package_name": "it.gangoffive.eculture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997088539224-j7q6lertc15tijesu2dj1cclq5kkv0ke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOsa9mr6bcwEzSaJgpBtpKn3FOYuoEFdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997088539224-j7q6lertc15tijesu2dj1cclq5kkv0ke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
