@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.gangoffive.eculture">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eculture">
+        <activity
+            android:name=".CustomCaptureActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar"/>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/provider" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ExportCsvActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WizardActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.add.AddRoomActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar" />
+        <activity
+            android:name=".ui.add.AddPlaceActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar" />
+        <activity
+            android:name=".ui.add.AddStructureActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar" />
+        <activity
+            android:name=".DetailsTourActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar" />
+        <activity
+            android:name=".DetailsStructureActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar" />
+        <activity
+            android:name=".DetailsRoomActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar" />
+        <activity
+            android:name=".DetailsPlaceActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:exported="true"
+            android:label="@string/forgot_password" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.RegistrationActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Eculture" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="it.gangoffive.eculture"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider" />
+        </provider>
+    </application>
+
+</manifest>
